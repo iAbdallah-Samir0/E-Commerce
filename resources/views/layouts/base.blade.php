@@ -137,12 +137,12 @@
                                             </div>
                                         </li>
                                         <li><a href="{{route('app.index')}}" class="nav-link menu-title">Home</a></li>
-                                        <li><a href="shop.html" class="nav-link menu-title">Shop</a></li>
-                                        <li><a href="cart.html" class="nav-link menu-title">Cart</a></li>
-                                        <li><a href="about-us.html" class="nav-link menu-title">About Us</a></li>
-                                        <li><a href="contact-us.html" class="nav-link menu-title">Contact Us</a>
+                                        <li><a href="{{route('shop.index')}}" class="nav-link menu-title">Shop</a></li>
+                                        <li><a href="{{route('cart.index')}}" class="nav-link menu-title">Cart</a></li>
+                                        <li><a href="{{route('about-us.index')}}" class="nav-link menu-title">About Us</a></li>
+                                        <li><a href="{{route('contact-us.index')}}" class="nav-link menu-title">Contact Us</a>
                                         </li>
-                                        <li><a href="blog.html" class="nav-link menu-title">Blog</a></li>
+                                        <li><a href="{{route('blog.index')}}" class="nav-link menu-title">Blog</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -156,7 +156,7 @@
                                 </li>
                                 <li class="onhover-dropdown wislist-dropdown">
                                     <div class="cart-media">
-                                        <a href="wishlist/list.html">
+                                        <a href="{{route('wishlist.index')}}">
                                             <i data-feather="heart"></i>
                                             <span id="wishlist-count" class="label label-theme rounded-pill">
                                                     0
@@ -235,7 +235,7 @@
 <div class="mobile-menu d-sm-none">
     <ul>
         <li>
-            <a href="demo3.php" class="active">
+            <a href="{{route('app.index')}}" class="active">
                 <i data-feather="home"></i>
                 <span>Home</span>
             </a>
