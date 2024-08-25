@@ -175,7 +175,6 @@
                 }
             </style>
             <div class="row g-sm-4 g-3">
-
                 <div class="col-xl-2 col-lg-2 col-6">
                     <div class="product-box">
                         <div class="img-wrapper">
@@ -190,11 +189,16 @@
                             </div>
                             <div class="cart-wrap">
                                 <ul>
-                                    <li>
-                                        <a href="javascript:void(0)" class="addtocart-btn">
-                                            <i data-feather="shopping-cart"></i>
-                                        </a>
-                                    </li>
+{{--                                    <li>--}}
+{{--                                        <a href="{{ route('cart.store') }}" onclick="event.preventDefault(); submitCartForm({{ $product->id }});" id="cartEffect" class="btn btn-solid hover-solid btn-animation">--}}
+{{--                                            <i class="fa fa-shopping-cart"></i>--}}
+{{--                                            <form id="add-to-cart-{{ $product->id }}" action="{{ route('cart.store') }}" method="POST" style="display: none;">--}}
+{{--                                                @csrf--}}
+{{--                                                <input type="hidden" name="id" value="{{ $product->id }}">--}}
+{{--                                                <input type="hidden" name="quantity" id="qty" value="1">--}}
+{{--                                            </form>--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
                                     <li>
                                         <a href="javascript:void(0)">
                                             <i data-feather="eye"></i>
@@ -2167,3 +2171,15 @@
     <div id="qvmodal"></div>
 
 @endsection
+
+
+
+{{--@push('scripts')--}}
+{{--    <script>--}}
+
+{{--        function submitCartForm(productId) {--}}
+{{--            document.getElementById('add-to-cart-' + productId).submit();--}}
+{{--        }--}}
+
+{{--    </script>--}}
+{{--@endpush--}}
